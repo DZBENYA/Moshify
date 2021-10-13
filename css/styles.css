@@ -488,6 +488,10 @@ a {
   display: grid;
 }
 
+.grid--3x1 {
+  padding-left: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
@@ -775,4 +779,29 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Features Block */
+
+.feature {
+  gap: 4rem 2rem;
+  margin-bottom: 12rem;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
